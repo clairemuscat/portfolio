@@ -1,16 +1,30 @@
 import React from "react";
 import "./App.css";
-let imageUrl = "./src/background-image-plants.jpg";
+import NavBar from "./NavBar";
+import Projects from "./Projects";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="App" style={{ backgroundImage: `url(${imageUrl})` }}>
+    <div className="App">
+      <NavBar />
       <div className="App-content">
-        <h1>
-          Hi! I'm Claire. Software developer, crossword constructor and cocktail
-          enthusiast. It's nice to meet you!
-        </h1>
+        <div id="hero">
+          <div id="top-intro">Hi! I'm Claire.</div>
+          <p className="hero-item">
+            I'm a full stack web developer with a passion for puzzles of any
+            kind. In my spare time you can find me either constructing
+            crosswords or mixing up a too-complicated cocktail.
+          </p>
+        </div>
+        <div id="headShot">
+          <img src="https://i.imgur.com/eShSxkZ.jpg" alt="" />
+        </div>
       </div>
+      <div className="proj-container">
+        <Projects />
+      </div>
+      <Footer />
     </div>
   );
 }
