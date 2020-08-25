@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import NavBar from "./NavBar";
+// import TitleBar from "./TitleBar";
 import Projects from "./Projects";
 import Footer from "./Footer";
 
@@ -10,16 +11,12 @@ function App() {
       <NavBar />
       <div className="App-content">
         <div id="hero">
-          <div id="top-intro">Hi! I'm Claire.</div>
-          <p className="hero-item">
-            I'm a full stack web developer with a passion for puzzles of any
-            kind. In my spare time you can find me either constructing
-            crosswords or mixing up a too-complicated cocktail.
-          </p>
+          <div id="top-intro">
+            hi! i'm claire. this will be my about me section.
+          </div>
+          <div className="hero-item">.</div>
         </div>
-        <div id="headShot">
-          <img src="https://i.imgur.com/eShSxkZ.jpg" alt="" />
-        </div>
+        <img src="https://i.imgur.com/eShSxkZ.jpg" alt="" id="headShot" />
       </div>
       <div className="proj-container">
         <Projects />

@@ -3,8 +3,8 @@ import React from "react";
 function Projects() {
   return (
     <>
+      <h1 className="projSection">Test</h1>
       <div className="projSection">
-        <h1>Projects</h1>
         <div className="projSectionItem">
           <h2>Nuance</h2>
           <p>

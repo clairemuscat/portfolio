@@ -1,6 +1,6 @@
 import React from "react";
 
-function TitleBar() {
+function SplashScreen() {
   return (
     <div className="titleBar">
       <div className="titleBarItem">
@@ -10,4 +10,4 @@ function TitleBar() {
   );
 }
 
-export default TitleBar;
+export default SplashScreen;
